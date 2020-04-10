@@ -1,167 +1,121 @@
 default: &default
   categories:
-    - labor:
-      - muck:
-      - trash:
-      - clean:
-      - shop:
-      - laundry:
-      - cook:
-      - sit:
-      - medical:
-    - equipment:
-      - construction:
-      - power_tools:
-      - tools:
-      - water_pump:
-      - protective_gear:
-      - generator:
-      - dehumidifier:
-      - appliances:
-    - supplies:
-      - construction:
-      - home_repair:
-      - cleaning_supplies:
-      - household_items:
-      - personal_care:
-      - baby_and_child_care:
-      - clothes:
-      - medicine:
-      - furniture:
-      - fuel:
-    - transportation:
-      - pickup_truck:
-      - bus_or_van:
-      - tow_truck:
-      - boat_motor:
-      - boat_no_motor:
-      - car:
-    - housing:
-      - family:
-      - individual:
-      - pets:
-    - food:
-      - ready_to_eat:
-      - baby_formula:
-      - drinking_water:
-      - canned_food:
-      - dry_foods:
-      - basic_staples:
+    - groceries:
+      - flour:
+        - 5kg:
+        - 10kg:
+      - rice:
+        - 1kg:
+        - 2kg:
+        - 5kg:
+      - lentil:
+        - 500g:
+        - 1kg:
+        - 2kg:
+        - 5kg:
+      - oil:
+        - 500ml:
+        - 1L:
+        - 2L:
+      - sugar:
+        - 1kg:
+        - 2kg:
+        - 5kg:
+      - tea_leaves:
+        - 250g:
+        - 500g:
+        - 1kg:
+      - potato:
+        - 1kg:
+        - 2kg:
+        - 5kg:
+      - onion:
+        - 1kg:
+        - 2kg:
+        - 5kg:
+      - milk_powder:
+        - 200g:
+        - 500g:
+      - soap:
+        - 1qty:
+        - 2qty:
+        - 5qty:
+      - salt:
+        - 1kg:
+        - 2kg:
+      - chilli_powder:
+        - 200g:
+      - turmeric:
+        - 200g:
+      - coriander_powder:
+        - 200g:
+      - garam_masala:
+        - 200g:
   icons:
-    # Category keys that need icons will have their
-    # corresponding icon key listed here
-    labor: user-md
-    equipment: wrench
-    supplies: shopping-basket
-    transportation: car
-    housing: bed
-    food: cutlery
+    groceries: cutlery
   en:
     categories: I need help with
-    labor: Labor
-    muck: Mucking
-    trash: Hauling Heavy Trash
-    clean: Cleaning
-    shop: Shopping
-    laundry: Laundry
-    cook: Cooking
-    sit: Baby Sitting
-    medical: Healthcare
-    home_repair: Home Repair
-    electrician: Electrical Issues
-    legal: Legal Issues
-    pest_control: Pest or Animal Control
-    counselor: Counseling
-    equipment: Equipment
-    construction: Construction
-    power_tools: Power Tools
-    tools: Tools
-    water_pump: Water Pumps
-    protective_gear: Protective Gear
-    generator: Generators
-    dehumidifier: Dehumidifiers
-    appliances: Appliances
-    other_equipment: Other Equipment
-    supplies: Supplies
-    cleaning_supplies: Cleaning Supplies
-    household_items: Household Items
-    personal_care: Personal Care
-    baby_and_child_care: Baby & Child Care
-    clothes: Clothes
-    medicine: Medicine
-    furniture: Furniture
-    fuel: Fuel
-    transportation: Transportation
-    pickup_truck: Pickup Truck
-    bus_or_van: Bus or Van
-    tow_truck: Tow Truck
-    boat_motor: Boat (motor)
-    boat_no_motor: Boat (no motor)
-    car: Car
-    housing: Housing
-    family: Family Housing
-    individual: Individual Housing
-    pets: Pet Housing
-    food: Food
-    ready_to_eat: Ready to Eat Food
-    baby_formula: Baby Formula
-    drinking_water: Drinking Water
-    canned_food: Canned Food
-    dry_foods: Dry Foods
-    basic_staples: Basic Staples
-  es:
-    categories: Necesito ayuda con
-    labor: Labor
-    muck: Limpieza
-    trash: Retirar escombros/basura
-    clean: Limpiar
-    shop: Comprar
-    laundry: Lavar
-    cook: Cocinar
-    sit: Cuidar niños
-    medical: Ayuda medica
-    home_repair: Reparaciones
-    electrician: Problemas electricos
-    legal: Problemas legales
-    pest_control: Control de animales/pestes
-    counselor: Terapia
-    equipment: Equipo
-    construction: Construccion
-    power_tools: Herramientas electricas
-    tools: Herramientas
-    water_pump: Bomba de agua
-    protective_gear: Equipo de protección
-    generator: Generadores
-    dehumidifier: Deshumidificadores
-    appliances: Aparatos del hogar
-    other_equipment: Equipo en general
-    supplies: Suministros
-    cleaning_supplies: Suministros de limpieza
-    household_items: Articulos del hogar
-    personal_care: Cuidado personal
-    baby_and_child_care: Cuidado de niños/bebes
-    clothes: Ropa
-    medicine: Medicina
-    furniture: Muebles
-    fuel: Combustible
-    transportation: Transportacion
-    pickup_truck: Camioneta
-    bus_or_van: Camion
-    tow_truck: Remolque
-    boat_motor: Barco (motor)
-    boat_no_motor: Barco (sin motor)
-    car: Coche
-    housing: Hospedaje
-    family: Hospedaje familiar
-    individual: Hospedaje individual
-    pets: Hospedaje para mascotas
-    food: Alimento
-    ready_to_eat: Alimentos rapidos
-    baby_formula: Alimentos para bebe
-    drinking_water: Agua potable
-    canned_food: Comida enlatada
-    dry_foods: Comida seca
-    basic_staples: Comida basica
+    10kg: 10 kg
+    1kg: 1 kg
+    1L: 1 L
+    1qty: 1 qty
+    200g: 200 g
+    250g: 250 g
+    2kg: 2 kg
+    2L: 2 L
+    2qty: 2 qty
+    500g: 500 g
+    500ml: 500 ml
+    5kg: 5 kg
+    5qty: 5 qty
+    chilli_powder: Red chilli powder
+    coriander_powder: Dhaniya (Coriander) powder
+    flour: Wheat flour
+    garam_masala: Garam masala
+    lentil: Lentil
+    milk_powder: Milk powder
+    oil: Edible oil
+    onion: Onion
+    potato: Potato
+    rice: Rice
+    salt: Salt
+    soap: Soap
+    sugar: Sugar
+    tea_leaves: Tea leaves
+    turmeric: Turmeric
+    groceries: Groceries
+  hi:
+    # These keys need to be translated into Hindi
+    categories: I need help with
+    10kg: 10 kg
+    1kg: 1 kg
+    1L: 1 L
+    1qty: 1 qty
+    200g: 200 g
+    250g: 250 g
+    2kg: 2 kg
+    2L: 2 L
+    2qty: 2 qty
+    500g: 500 g
+    500ml: 500 ml
+    5kg: 5 kg
+    5qty: 5 qty
+    chilli_powder: Red chilli powder
+    coriander_powder: Dhaniya (Coriander) powder
+    flour: Wheat flour
+    garam_masala: Garam masala
+    lentil: Lentil
+    milk_powder: Milk powder
+    oil: Edible oil
+    onion: Onion
+    potato: Potato
+    rice: Rice
+    salt: Salt
+    soap: Soap
+    sugar: Sugar
+    tea_leaves: Tea leaves
+    turmeric: Turmeric
+    groceries: Groceries
 
 development:
   <<: *default

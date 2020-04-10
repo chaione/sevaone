@@ -5,13 +5,9 @@ module Api
     module Connect
       class CategoriesController < ApplicationController
         def index
-          render json: categories
-        end
-
-        private
-
-        def categories
-          @categories ||= Rails.application.config_for(:connect_categories)
+          if stale?(etag: CONNECT_CATEGORIES, last_modified: CONNECT_CATEGORIES_LAST_MODIFIED, public: true)
+            render json: CONNECT_CATEGORIES
+          end
         end
       end
     end

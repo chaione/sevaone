@@ -1,60 +1,59 @@
 default: &default
   categories:
-    - groceries:
-      - flour:
-        - 5kg:
-        - 10kg:
-      - rice:
-        - 1kg:
-        - 2kg:
-        - 5kg:
-      - lentil:
-        - 500g:
-        - 1kg:
-        - 2kg:
-        - 5kg:
-      - oil:
-        - 500ml:
-        - 1L:
-        - 2L:
-      - sugar:
-        - 1kg:
-        - 2kg:
-        - 5kg:
-      - tea_leaves:
-        - 250g:
-        - 500g:
-        - 1kg:
-      - potato:
-        - 1kg:
-        - 2kg:
-        - 5kg:
-      - onion:
-        - 1kg:
-        - 2kg:
-        - 5kg:
-      - milk_powder:
-        - 200g:
-        - 500g:
-      - soap:
-        - 1qty:
-        - 2qty:
-        - 5qty:
-      - salt:
-        - 1kg:
-        - 2kg:
-      - chilli_powder:
-        - 200g:
-      - turmeric:
-        - 200g:
-      - coriander_powder:
-        - 200g:
-      - garam_masala:
-        - 200g:
+    - flour:
+      - 5kg:
+      - 10kg:
+    - rice:
+      - 1kg:
+      - 2kg:
+      - 5kg:
+    - lentil:
+      - 500g:
+      - 1kg:
+      - 2kg:
+      - 5kg:
+    - oil:
+      - 500ml:
+      - 1L:
+      - 2L:
+    - sugar:
+      - 1kg:
+      - 2kg:
+      - 5kg:
+    - tea_leaves:
+      - 250g:
+      - 500g:
+      - 1kg:
+    - potato:
+      - 1kg:
+      - 2kg:
+      - 5kg:
+    - onion:
+      - 1kg:
+      - 2kg:
+      - 5kg:
+    - milk_powder:
+      - 200g:
+      - 500g:
+    - soap:
+      - 1qty:
+      - 2qty:
+      - 5qty:
+    - salt:
+      - 1kg:
+      - 2kg:
+    - chilli_powder:
+      - 200g:
+    - turmeric:
+      - 200g:
+    - coriander_powder:
+      - 200g:
+    - garam_masala:
+      - 200g:
   icons:
-    groceries: cutlery
+    categories: cutlery
   en:
-    categories: I need help with
+    categories: Groceries needed
     10kg: 10 kg
     1kg: 1 kg
     1L: 1 L
@@ -83,10 +82,9 @@ default: &default
     sugar: Sugar
     tea_leaves: Tea leaves
     turmeric: Turmeric
-    groceries: Groceries
   hi:
     # These keys need to be translated into Hindi
-    categories: I need help with
+    categories: Groceries needed
     10kg: 10 kg
     1kg: 1 kg
     1L: 1 L
@@ -115,7 +113,6 @@ default: &default
     sugar: Sugar
     tea_leaves: Tea leaves
     turmeric: Turmeric
-    groceries: Groceries
 
 development:
   <<: *default

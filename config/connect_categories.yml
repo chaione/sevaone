@@ -84,35 +84,35 @@ default: &default
     turmeric: Turmeric
   hi:
     # These keys need to be translated into Hindi
-    categories: Groceries needed
-    10kg: 10 kg
-    1kg: 1 kg
-    1L: 1 L
-    1qty: 1 qty
-    200g: 200 g
-    250g: 250 g
-    2kg: 2 kg
-    2L: 2 L
-    2qty: 2 qty
-    500g: 500 g
-    500ml: 500 ml
-    5kg: 5 kg
-    5qty: 5 qty
-    chilli_powder: Red chilli powder
-    coriander_powder: Dhaniya (Coriander) powder
-    flour: Wheat flour
-    garam_masala: Garam masala
-    lentil: Lentil
-    milk_powder: Milk powder
-    oil: Edible oil
-    onion: Onion
-    potato: Potato
-    rice: Rice
-    salt: Salt
-    soap: Soap
-    sugar: Sugar
-    tea_leaves: Tea leaves
-    turmeric: Turmeric
+    categories: किराने का सामान की जरूरत
+    10kg: 10 किग्रा
+    1kg: 1 किग्रा
+    1L: 1 ली
+    1qty: 1 मात्रा
+    200g: 200 ग्रा
+    250g: 250 ग्रा
+    2kg: 2 किग्रा
+    2L: 2 ली
+    2qty: 2 मात्रा
+    500g: 500 ग्रा
+    500ml: 500 मिली
+    5kg: 5 किग्रा
+    5qty: 5 मात्रा
+    chilli_powder: लाल मिर्च
+    coriander_powder: धनिया पाउडर
+    flour: आटा
+    garam_masala: गरम मसाला
+    lentil: दाल
+    milk_powder: दूध पाउडर
+    oil: खाद्य तेल
+    onion: प्याज
+    potato: आलू
+    rice: चावल
+    salt: नमक
+    soap: साबुन
+    sugar: शक्कर
+    tea_leaves: चाय पत्ती
+    turmeric: हल्दी
 
 development:
   <<: *default

@@ -97,6 +97,14 @@ class Connect::MarkerTest < ActiveSupport::TestCase
     assert Connect::Marker.by_type(@marker.marker_type).all? { |m| m.marker_type == @marker.marker_type }
   end
 
+  test 'scope by haves' do
+    assert Connect::Marker.haves.all? { |m| m.marker_type == 'have' }
+  end
+
+  test 'scope by needs' do
+    assert Connect::Marker.needs.all? { |m| m.marker_type == 'need' }
+  end
+
   test 'scope resolved' do
     assert Connect::Marker.resolved.all? { |m| m.resolved }
   end

@@ -15,6 +15,8 @@ module Connect
     scope :by_category, ->(category) { where('categories ? :category', category: category) }
     scope :by_device_uuid, ->(device_uuid) { where(device_uuid: device_uuid) }
     scope :by_type, ->(type) { where(marker_type: type) }
+    scope :haves, ->() { by_type(MARKER_TYPES.first) }
+    scope :needs, ->() { by_type(MARKER_TYPES.second) }
     scope :flagged, ->() { where("data ? 'inappropriate_flag'") }
     scope :not_flagged, ->() { where.not("data ? 'inappropriate_flag'") }
     scope :resolved, -> { where(resolved: true) }

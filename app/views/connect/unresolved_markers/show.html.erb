@@ -1,0 +1,27 @@
+<h1>Marker <%= @unresolved_marker.id %></h1>
+
+<%= link_to 'Resolve', connect_unresolved_marker_path(@unresolved_marker),
+            method: :patch,
+            title: "Mark this need as resolved",
+            class: "button button-outline" %> |
+<%= link_to 'Back', connect_unresolved_markers_path, class: "button button-outline" %>
+
+<div class="row">
+  <div class="column">
+    <h4>Marker Details</h4>
+    <pre><code><%= JSON.pretty_generate @unresolved_marker.as_json %></code></pre>
+  </div>
+  <div class="column">
+    <div id="map" style="height: 300px; width: 100%"></div>
+    <script>
+      $(window).ready(function(){
+        simpleMap({
+          selector: "#map",
+          name: "<%= j @unresolved_marker.name %>",
+          lat: <%= @unresolved_marker.latitude || 0%>,
+          lng: <%= @unresolved_marker.longitude || 0%>
+        })
+      })
+    </script>
+  </div>
+</div>

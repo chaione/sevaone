@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   resources :amazon_products, except: [:new, :create, :destroy]
   namespace :connect do
     resources :flagged_markers, only: [:index, :show, :update, :destroy]
+    resources :unresolved_markers, only: [:index, :show, :update]
   end
 
   root to: "splash#index"

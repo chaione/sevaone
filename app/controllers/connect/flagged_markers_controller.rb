@@ -3,7 +3,6 @@ class Connect::FlaggedMarkersController < ApplicationController
   helper_method :fields
 
   def index
-    logger.info current_user
     @flagged_markers = ::Connect::Marker.unresolved.flagged
   end
 

@@ -16,6 +16,7 @@
       <% fields.map(&:titleize).each do |header| %>
         <th><%= header %></th>
       <% end %>
+      <th></th>
     </tr>
   </thead>
 
@@ -26,6 +27,12 @@
         <% fields.each do |field| %>
           <td><%= row[field] %></td>
         <% end %>
+        <td>
+          <%= link_to 'Resolve', connect_unresolved_marker_path(row),
+                    method: :patch,
+                    title: "Mark this need as resolved",
+                    class: "button button-outline" %>
+        </td>
       </tr>
     <% end %>
   </tbody>

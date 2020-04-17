@@ -24,8 +24,5 @@ class ApplicationController < ActionController::Base
       ip_address: request.ip
     )
     Raven.extra_context(params: params.to_unsafe_h, url: request.url)
-    logger.debug current_user.to_json
-    logger.debug Raven.user_context
-    logger.debug Raven.extra_context
   end
 end

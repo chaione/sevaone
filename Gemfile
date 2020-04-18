@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.1'
+gem 'rails', '~> 5.2.4.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.12'
 gem 'sass-rails', '~> 5.0'
@@ -28,6 +28,7 @@ gem 'simple_form'
 gem 'redcarpet'
 gem 'sentry-raven'
 gem 'scout_apm'
+gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'capybara', '~> 2.13'

@@ -22,6 +22,7 @@ before_script:
 - sudo cp chromedriver /usr/local/bin/.
 - sudo chmod +x /usr/local/bin/chromedriver
 - export DISPLAY=:99.0
+- mkdir -p tmp/pids
 script:
  - RAILS_ENV=test bundle exec rails db:migrate --trace
  - bundle exec rails db:test:prepare

@@ -1,5 +1,7 @@
-The Harvey Needs API
+~~The Harvey Needs~~ SevaOne API
 ====================
+
+[![Build Status](https://travis-ci.org/chaione/sevaone.svg?branch=master)](https://travis-ci.org/chaione/sevaone)
 
 * We serve JSON data here, open and fresh
 * We help client applications help those affeceted by Hurricane Harvey
@@ -56,8 +58,8 @@ The format for the date timestamp is rfc2822, though you can use any HTTP approv
 Getting Started (Dev)
 -------
 #### Prequisites
-* Ruby 2.4.1
-* Rails 5.1
+* Ruby 2.6.6
+* Rails 5.2
 
 #### User Administration
 In `rails console` you'll want to create an admin user:

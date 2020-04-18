@@ -16,9 +16,9 @@ class ImportNeedsJobTest < ActiveJob::TestCase
     VCR.use_cassette("needs") do
       needs = APIImporter.needs
       ImportNeedsJob.perform_now
-      needsCount = needs.count
-      recordsCount = Need.count
-      assert_equal needsCount, recordsCount
+      needs_count = needs.count
+      records_count = Need.count
+      assert_equal needs_count, records_count
     end
   end
 end

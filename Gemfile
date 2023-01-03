@@ -22,7 +22,7 @@ gem 'geocoder'
 gem 'devise'
 gem 'vacuum'
 gem 'connection_pool'
-gem "httparty", "~> 0.15.6"
+gem "httparty", "~> 0.21.0"
 gem 'redis', '~> 3.2'
 gem 'simple_form'
 gem 'redcarpet'
